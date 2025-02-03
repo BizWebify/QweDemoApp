@@ -1,0 +1,48 @@
+<div class="cardItem mt-5" style="margin-top: 20px;">
+  <div class="thirdSection">
+    <div class="headingActive">Past Challenges</div>
+
+    <div
+      *ngFor="let project of projects | slice : 0 : 3"
+      style="background-color: white"
+      class="cardItem"
+    >
+      <div style="display: flex">
+        <div>
+          <div class="imgStyle">
+            <img
+              src="pastIcon.png"
+              width="200px"
+              height="150px"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="w-100 ml-auto">
+          <div class="firstSectionCard d-flex justify-content-around align-items-center w-100">
+            <div>
+              <div>{{ project.title }}</div>
+              <div class="skillSection">
+                <div>
+                  <span style="color: #9c13bf; margin-right: 3px">{{
+                    project.mode
+                  }}</span>
+                  <span>{{ project.skillsRequired.join(", ") }} </span>
+                  <span>{{ project.preferredExperience }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex date-time">
+            <div class="mr-2">{{ project.createdOn | date : "d MMM yyyy" }}</div>
+            <div><span class="red-star">4.5 ★</span></div> 
+          </div>
+          </div>
+          <div class="desc" [innerHTML]="project.description"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="viewMoreStyle">View More</div>
+  </div>
+</div>

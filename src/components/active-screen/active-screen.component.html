@@ -1,0 +1,50 @@
+<div class="thirdSection cardItem mt-5">
+  <div class="headingActive">Take up a challenge & prove your skills!</div>
+  <div class="secondSection">
+    <div class="dropdown-container">
+      <select class="dropdown">
+        <option>Skills</option>
+        <option>Angular</option>
+        <option>React</option>
+      </select>
+    </div>
+
+    <div class="dropdown-container">
+      <select class="dropdown">
+        <option>Expertise</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+      </select>
+    </div>
+
+    <div class="challengeBtn">
+      <img src="elec.svg" class="logo" width="20px" height="20px" alt="Logo" />
+      <span class="text-custom">Challenge Accepted!</span>
+    </div>
+  </div>
+</div>
+
+<div class="thirdSection cardItem mt-5">
+  <div class="headingActive">Active Challenges</div>
+
+  <div *ngFor="let project of projects | slice : 0 : 2" class="cardItem">
+    <div class="firstSectionCard">
+      <div>
+        <div>{{ project.title }}</div>
+        <div class="skillSection">
+          <div>
+            <span style="color: #9c13bf; margin-right: 3px">{{
+              project.status
+            }}</span>
+            <span>{{ project.skillsRequired.join(", ") }} </span>
+            <span>{{ project.preferredExperience }}</span>
+          </div>
+        </div>
+      </div>
+      <div>{{ project.createdOn | date : "d MMM yyyy" }}</div>
+    </div>
+
+    <div class="desc" [innerHTML]="project.description">
+    </div>
+  </div>
+</div>

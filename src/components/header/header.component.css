@@ -1,0 +1,38 @@
+.custom-div {
+    height: 52px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    background-color: #9C13BF; 
+    opacity: 1;
+    color: white;
+    font-size: 18px;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+.dashStyle{
+font-family: Kanit;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.92px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-left: 5px;
+vertical-align: top;
+}
+
+.rightSide{
+    display: flex;
+}
+.margin-top-custom{
+    margin-top: 20px;
+
+}

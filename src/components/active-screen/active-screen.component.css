@@ -1,0 +1,79 @@
+.headingActive{
+font-family: Kanit;
+font-size: 28px;
+font-weight: 600;
+line-height: 41.86px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.dropdown-container {
+    position: relative;
+    width: 350px;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dropdown-container::after {
+    content: "▼";
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.challengeBtn{
+width: 200px;
+height: 20px;
+padding: 12px 20px 12px 20px;
+gap: 8px;
+border-radius: 25px;
+opacity: 0px;
+background: #9C13BF;
+
+}
+.secondSection{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.text-custom{
+    font-family: Kanit;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    vertical-align: top;
+}
+.cardItem{
+padding: 24px;
+margin-left: 25px;
+    margin-right: 25px;
+margin-bottom: 16px;
+border-radius: 15px;
+opacity: 0px;
+box-shadow: 0px 0px 8px 0px #00000014;
+
+}
+.firstSectionCard{
+    display: flex;
+    justify-content: space-between;
+}
+.thirdSection{
+    margin-top: 20px;
+    background: #fff;
+
+}
+

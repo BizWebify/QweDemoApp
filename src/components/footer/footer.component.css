@@ -1,0 +1,12 @@
+.content {
+  height: 120px;
+  top: 2537px;
+  padding: 30px 140px 30px 140px;
+  gap: 36px;
+  opacity: 0px;
+  background-color: #9c13bf;
+}
+
+.Text-white {
+  color: white;
+}

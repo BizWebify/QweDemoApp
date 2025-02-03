@@ -1,0 +1,35 @@
+.header-banner {
+    background-image: url('../../../public/headerBanner.png'); /* Adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Change color if needed */
+    font-family: Arial, sans-serif;
+    margin: 16px 24px 16px 24px;
+    gap: 24px;
+    border-radius: 25px;
+    
+  }
+  
+  .content-first {
+    font-family: Kanit;
+    font-size: 57px;
+    font-weight: 700;
+    letter-spacing: 0.21em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+  }
+  .content-second {
+    font-family: Kanit;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+  }
